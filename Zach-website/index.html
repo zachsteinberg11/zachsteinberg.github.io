@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Zach Steinberg — Portfolio</title>
+    <meta name="description" content="Zach Steinberg — software engineer. About, skills, selected work and contact.">
+    <meta property="og:title" content="Zach Steinberg — Portfolio">
+    <meta property="og:description" content="About, skills, selected work and contact.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/profile.svg">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="brand" href="#">Zach Steinberg</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>Hi — I'm Zach.</h1>
+            <p class="lead">I am currently a senior information systems major seeking a full time role in the technology field.</p>
+            <p class="cta-row">
+              <a class="btn" href="#contact">Contact me</a>
+            </p>
+          </div>
+          <div class="hero-image">
+            <picture>
+              <!-- Preferred: webp for smaller size, then jpg as fallback, then svg for browsers that need it -->
+              <source srcset="assets/profile.webp" type="image/webp">
+              <source srcset="assets/profile.jpg" type="image/jpeg">
+              <img src="assets/profile.svg" alt="Zach Steinberg" class="profile">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card">
+  <h2>About</h2>
+  <p>I'm Zach Steinberg, a senior management information systems major with a minor in Logistics at Georgia College & State University, actively seeking a full time role in the technology and business analytics field. My recent projects, strong academic foundation, and ability to learn make me a versatile candidate for roles in Information Technology. I am passionate about staying up to date on the latest industry trends, and I am eager to apply my skills in a dynamic and collaborative work environment.</p>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>SQL</li>
+          <li>Jira, Figma</li>
+          <li>SAP Analytic Cloud</li>
+          <li>Visio</li>
+          <li>SAP S/4 HANA</li>
+        </ul>
+      </section>
+
+      <section id="work" class="card">
+        <h2>Recent projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Study Abroad Case Study</h3>
+            <p>Collaborated with a team of 30 students to develop actionable strategies for reducing data waste and improving cloud efficiency.</p>
+          </article>
+          <article class="project">
+            <h3>Website Integration and Inventory mangement System</h3>
+            <p>Designed a real time inventory management system integratiing Salesforce and WordPress.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, email me at <a href="mailto:zacharyssteinberg@gmail.com">zacharyssteinberg@gmail.com</a> or use the links below.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:zacharyssteinberg@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/zachsteinberg" target="https://www.linkedin.com/in/zachsteinberg">LinkedIn</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <p>© <span id="year"></span> Zach Steinberg — <a href="/resume.pdf">Resume</a></p>
+      </div>
+    </footer>
+
+    <script>
+      // insert current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
