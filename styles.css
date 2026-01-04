@@ -10,7 +10,7 @@
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:var(--text);background:linear-gradient(180deg,#071020 0%,#071822 100%);line-height:1.25;} 
 .inner{max-width:1000px;margin:0 auto;padding:1rem}
-.site-header{backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);}
+.site-header{backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);} 
 .site-header .inner{display:flex;align-items:center;justify-content:space-between}
 .brand{font-weight:700;color:var(--text);text-decoration:none}
 .nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
@@ -30,6 +30,15 @@ html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-
 .contact-list{list-style:none;padding:0;margin:0;display:flex;gap:1rem}
 .site-footer{padding:2rem 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
 .qr img{width:96px;height:96px;border-radius:8px;margin-top:0.5rem}
+
+/* make header nav button slightly smaller so it lines up with text links */
+.nav a.btn {
+  padding: 0.45rem 0.7rem;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+/* if you want the resume button to be more subtle in the header, use .btn.ghost instead */
 @media(max-width:880px){
   .hero-grid{grid-template-columns:1fr;}
   .hero-image{text-align:center}
